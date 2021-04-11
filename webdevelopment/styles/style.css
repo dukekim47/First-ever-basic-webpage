@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Train+One&display=swap');
+
 body {
     margin: 0;
     height: 100%;
@@ -16,17 +18,53 @@ body {
 .navbar {
     display: flex;
 }
+/* Below is for Larger Screen Sizes*/
+@media only screen and (min-width: 500px) {
 
-.nav {
+    
+.nav-desktop {
     padding-right: 30px;
     align-self: center;
     color: white;
     text-decoration: none;
 }
 
-.nav:hover {
+.nav-desktop:hover {
     color: #845EC2;
     text-decoration: underline;
+}
+.burger {
+    display: none;
+}
+}
+/* Below is for Smaller Screen Sizes*/
+@media only screen and (max-width: 500px) {
+.burger {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    margin-right: 85%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.burger-slices {
+    position: relative;
+    content: "";
+    background-color: white;
+    width: 40px;
+    margin-top: 8px;
+    margin-left: 10%;
+    padding: 2px;
+    border-radius: 20px;
+    
+}    
+    
+.nav-desktop {
+    display: none;
+}
+
 }
 
 #logo {
@@ -42,6 +80,12 @@ body {
     flex-direction: column;
 
 }
+.main h1 {
+    color: #845EC2;
+    font-family: 'Train One', cursive;
+    font-weight: 600;
+}
+
 #puggy {
     display: block;
     position: relative;
@@ -56,4 +100,27 @@ input {
 
 button {
     border-radius: 20%;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    background-color: #9B89B3;
+    color: white;
+}
+
+.footer-logo {
+    height: 50px;
+    width: 50px;
+}
+
+p {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
 }

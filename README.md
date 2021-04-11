@@ -1,7 +1,2 @@
 # Learning To Oden
- Ohhh Yiiss
-
-
-
-
-10th of April 2021
+Images found from commission free websites
