@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #FCF7FF;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    background-color: #9B89B3;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav {
+    padding-right: 30px;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: #845EC2;
+    text-decoration: underline;
+}
+
+#logo {
+    height: 100%;
+    padding-right: 0px;
+}
+
+.main {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#puggy {
+    display: block;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+input {
+    width: 200px;
+    border-radius: 10%;
+}
+
+button {
+    border-radius: 20%;
+}
